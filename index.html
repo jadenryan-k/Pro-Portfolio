@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Jaden Ryan" />
+    <meta
+      name="description"
+      content="A passionate Web Developer with great skills in UI/UX Design and Front-End Development"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, web development, projects, jaden ryan kitonga"
+    />
+    <meta name="author" content="Jaden Ryan" />
+    <meta property="og:title" content="Jaden Ryan-Portfolio" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio | Jaden Ryan</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jaden Ryan",
+        "jobTitle": "Web Developer",
+        "url": "",
+        "description": "I am a skilled web developer with expertise in HTML, CSS, and JavaScript. I specialize in creating responsive and user-friendly websites.",
+        "sameAs": [
+          "https://www.linkedin.com/in/jaden-ryan-660110275",
+          "https://github.com/jadenryan-k",
+          "https://www.instagram.com/jadenryan_?igshid=OGQ5ZDc2ODk2ZA=="
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!--Home-->
+    <section id="home">
+      <header>
+        <div class="menu-icon" onclick="toggleNavbar()">
+          <i class="ri-menu-3-fill"></i>
+        </div>
+        <a href="#" class="logo"
+          ><i class="ri-home-smile-fill"></i><span>Jaden.</span>
+        </a>
+        <nav class="navbar" style="display: none">
+          <div class="close-icon" onclick="closeNavbar()">
+            <i class="fas fa-times"></i>
+          </div>
+
+          <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="Resumé.pdf" target="_blank" download>Portfolio</a></li>
+          </ul>
+        </nav>
+
+        <div class="socials">
+          <a
+            href="https://www.instagram.com/jadenryan_?igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank"
+            class="insta"
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a
+            href="https://github.com/jadenryan-k"
+            target="_blank"
+            class="github"
+            ><i class="ri-github-line"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/jaden-ryan-660110275"
+            target="_blank"
+            class="linked"
+            ><i class="ri-linkedin-line"></i
+          ></a>
+        </div>
+      </header>
+      <div class="home-content">
+        <div class="intro">
+          <p class="name">Hi, I'm <span>Jaden Ryan</span></p>
+          <div class="typewriter">
+            <p class="description">I'm a <span class="role"></span></p>
+          </div>
+          <p class="reach">
+            Want an Aesthetic Website? <span>Contact Me</span>
+          </p>
+          <button class="hire">
+            <a href="Resumé.pdf" download>Download Resumé</a>
+          </button>
+        </div>
+        <div class="cube">
+          <div class="face front"><i class="fab fa-html5"></i></div>
+          <div class="face back"><i class="fab fa-css3-alt"></i></div>
+          <div class="face left"><i class="fab fa-js"></i></div>
+          <div class="face right"><i class="fab fa-react"></i></div>
+          <div class="face top"><i class="fab fa-git"></i></div>
+          <div class="face bottom"><i class="fab fa-tailwind">Tailwind</i></div>
+        </div>
+      </div>
+    </section>
+    <!--About-->
+
+    <section id="about">
+      <div class="text">
+        <h2>About Me</h2>
+        <h5>Developer & <span>Designer</span></h5>
+        <p>
+          I have a passion for creating great <span>responsive websites</span>,
+          providing <span>clean code</span> and great artistic designs. The
+          websites are also interactive and accessible to all users, regardless
+          of the device. I have a <span>passion for art</span> hence the love
+          for <span>front-end development</span>. I am also looking forward to
+          becoming a full stack developer.
+        </p>
+        <div class="btn">
+          <a href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="technologies">
+        <h1>Technologies</h1>
+        <h2>Frontend Development</h2>
+        <p>
+          HTML <i class="fab fa-html5" id="html"></i>, CSS
+          <i class="fab fa-css3-alt" id="css"></i>,
+          <span class="tailwind">Tailwind CSS</span>, JavaScript
+          <i class="fab fa-js" id="javascript"></i>
+        </p>
+        <h2>Backend Development</h2>
+        <p>
+          Java<i class="fa-brands fa-java" id="java"></i>, PHP
+          <i class="fa-brands fa-php" id="php"></i>
+        </p>
+      </div>
+    </section>
+
+    <!--Projects-->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="box">
+        <div class="card">
+          <img src="images/tictactoe.png" alt="tic-tac-toe image" />
+          <p class="card-description">
+            <span>Tic Tac Toe!</span> This web game, crafted with
+            <span>HTML, CSS, and JavaScript</span>
+            offers a sleek design and responsive gameplay.
+          </p>
+          <a href="https://github.com/jadenryan-k/tic-tac-toe" target="_blank"
+            >Check It Out!</a
+          >
+        </div>
+        <div class="card">
+          <img src="images/recipe.jpg" alt="recipe image" />
+          <p class="card-description">
+            A demo <span>Recipe Website</span> built using
+            <span>HTML, Tailwind CSS and JavaScript</span>
+            with responsive display.
+          </p>
+          <a href="https://github.com/jadenryan-k/tailwind-1" target="_blank"
+            >Check It out!</a
+          >
+        </div>
+        <div class="card">
+          <img src="images/weather.jpg" alt="recipe image" />
+          <p class="card-description">
+            A Weather App designed using
+            <span>HTML, CSS, and JavaScript</span> it seamlessly integrates with
+            a <span>weather API</span> for real-time forecasts.
+          </p>
+          <a
+            href="https://github.com/jadenryan-k/weather-app-project"
+            target="_blank"
+            >Check It out!</a
+          >
+        </div>
+      </div>
+
+      <!--footer-->
+      <section id="footer">
+        <footer>
+          <p class="title">J.K.RYAN</p>
+          <p class="call">
+            Give me a call:
+            <span><a href="tel:+254704781742">+254 704 781 742</a></span>
+          </p>
+          <p class="copyright">
+            <i class="ri-copyright-line"></i>
+            <span>Copyright by Jaden Ryan</span>
+          </p>
+          <div class="socials2">
+            <a
+              href="https://www.instagram.com/jadenryan_?igshid=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+              class="insta"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="https://github.com/jadenryan-k"
+              target="_blank"
+              class="github"
+              ><i class="ri-github-line"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jaden-ryan-660110275"
+              target="_blank"
+              class="linked"
+              ><i class="ri-linkedin-line"></i
+            ></a>
+          </div>
+        </footer>
+      </section>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      let typed = new Typed(".role", {
+        strings: [
+          "Front-End Developer.",
+          "Responsive Web Designer",
+          "UI/UX Designer",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
