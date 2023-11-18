@@ -1,8 +1,8 @@
 :root {
   --primary-text-color: #fff;
-  --sec-text-color: #8ddbe0;
-  --bg-color: #292f36;
-  --sec-bg-color: #9bc4bc;
+  --sec-text-color: #fca311;
+  --dark-bg-color: #000000;
+  --sec-bg-color: #14213d;
 }
 
 * {
@@ -14,15 +14,19 @@
 }
 
 body {
-  background: linear-gradient(
-    to right,
-    rgba(41, 47, 54, 0.8),
-    rgba(13, 24, 33, 0.8)
-  );
-  background-size: cover;
+  background-image: url("images/pcblacknature.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url(images/pcblacknature.jpg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 666px) {
+  body {
+    background-image: url("images/phoneblacknature.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 }
 
 header {
@@ -32,15 +36,11 @@ header {
   height: 25px;
   width: 100%;
   top: 0;
-  background: linear-gradient(
-    to right,
-    rgba(41, 47, 54, 0.8),
-    rgba(13, 24, 33, 0.8)
-  );
+  background: var(--dark-bg-color);
   font-size: 1.2rem;
   align-items: center;
   right: 0;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 28px 12%;
   transition: all 0.5s ease;
 }
@@ -50,10 +50,6 @@ nav ul {
 }
 
 #home {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: url(images/pcblacknature.jpg);
   height: 100vh;
   position: relative;
   padding: 70px;
@@ -73,9 +69,9 @@ nav ul {
 }
 
 .navbar {
-  display: flex;
+  display: none;
   padding: 5px;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .navbar a {
@@ -90,7 +86,7 @@ nav ul {
 
 .socials a {
   padding: 5px;
-  color: var(--primary-text-color);
+  color: var(--sec-text-color);
 }
 
 .socials a:hover {
@@ -118,30 +114,22 @@ nav ul {
 
   .navbar {
     display: none;
-    border-radius: 20px;
+    border-radius: 10px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 32%;
+    height: auto;
     background: linear-gradient(
-      to top,
-      rgba(41, 47, 54, 0.55),
-      rgba(13, 24, 33, 0.55)
+      to bottom,
+      rgba(41, 47, 54, 0.65),
+      rgba(0, 0, 0, 0.65)
     );
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-  }
-  .close-icon {
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    font-size: 1.5rem;
-    color: var(--sec-text-color);
+    padding: 20px;
+    text-align: center;
   }
 }
+
 .home-content {
   display: flex;
   justify-content: space-around;
@@ -184,15 +172,20 @@ nav ul {
 .hire {
   position: absolute;
   margin-top: 30px;
-  color: var(--sec-text-color);
-  background: var(--bg-color);
+  background: var(--primary-text-color);
   font-size: 1.1rem;
-  border: 2px solid transparent;
+  border: 2px solid #fff;
   border-radius: 30px;
 }
 
 .hire a {
-  color: var(--primary-text-color);
+  color: var(--dark-bg-color);
+}
+
+.hire:hover {
+  border: 2px solid #fca311;
+  border-radius: 30px;
+  color: #fff;
 }
 
 .hire a:hover {
@@ -200,7 +193,6 @@ nav ul {
 }
 
 .hire:hover {
-  border: 2px solid #61dafb;
   cursor: pointer;
 }
 
@@ -263,7 +255,7 @@ nav ul {
   }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-width: 700px) {
   .hire {
     margin-bottom: 30px;
   }
@@ -363,7 +355,7 @@ nav ul {
 }
 
 .text {
-  width: 700px;
+  width: 60%;
 }
 .text h2 {
   font-weight: 700;
@@ -377,16 +369,16 @@ nav ul {
   color: slateblue;
 }
 .text h5 span {
-  color: var(--sec-bg-color);
+  color: var(--primary-text-color);
 }
 
 .text p span {
   color: var(--sec-text-color);
-  font-weight: 600;
+  font-weight: 550;
 }
 
 .btn {
-  border: 2px solid #61dafb;
+  border: 2px solid #fca311;
   transition: 0.4s;
   font-weight: 650;
   font-size: 1.1rem;
@@ -397,7 +389,7 @@ nav ul {
 }
 
 .btn a {
-  color: #61dafb;
+  color: var(--sec-text-color);
 }
 
 .btn a:hover {
@@ -504,7 +496,7 @@ nav ul {
 .card a {
   display: block;
   margin-top: 5px;
-  color: #61dafb;
+  color: var(--sec-text-color);
 }
 
 @media screen and (max-width: 500px) {
